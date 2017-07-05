@@ -53,7 +53,7 @@ var intents = new builder.IntentDialog({ recognizers: [recognizer] })
     session.send('Hello there, you sent this -> \'%s\'.', session.message.text);
 })
 .matches('solutions',(session,args) => {
-    session.send('this is solutions \'%s\'.', session.message.text);
+    session.send('this is solutions provided by sopra'.', session.message.text);
 })
 .matches('offerings',(session,args) => {
     session.send('this is offering \'%s\'.', session.message.text);

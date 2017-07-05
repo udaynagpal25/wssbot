@@ -53,16 +53,16 @@ var intents = new builder.IntentDialog({ recognizers: [recognizer] })
     session.send('Hello there, you sent this -> \'%s\'.', session.message.text);
 })
 .matches('solutions',(session,args) => {
-    session.send('this is about us \'%s\'.', session.message.text);
+    session.send('this is solutions \'%s\'.', session.message.text);
 })
 .matches('offerings',(session,args) => {
-    session.send('this is about us \'%s\'.', session.message.text);
+    session.send('this is offering \'%s\'.', session.message.text);
 })
 .matches('market',(session,args) => {
-    session.send('this is about us \'%s\'.', session.message.text);
+    session.send('this is market \'%s\'.', session.message.text);
 })
 .matches('locations',(session,args) => {
-    session.send('this is about us \'%s\'.', session.message.text);
+    session.send('this is location\'%s\'.', session.message.text);
 })
 .matches('partners',(session,args) => {
     session.send('partners ', session.message.text);
